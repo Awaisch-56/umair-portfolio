@@ -2,7 +2,7 @@ import React from "react";
 import NavLink from "../navLink/NavLink";
 import { MenuOverlayProps } from "@/type/componentsTypes";
 
-const MenuOverlay: React.FC<MenuOverlayProps> = ({ links, onClose }) => {
+const MenuOverlay: React.FC<MenuOverlayProps> = ({ links }) => {
   return (
     <ul className="menu-overlay">
       {links.map((link, index) => (

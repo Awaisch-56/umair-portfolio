@@ -77,7 +77,7 @@ const Navbar = () => {
         </div>
       </div>
       {isNavbarOpen ? (
-        <MenuOverlay links={navbarLinks} onClose={handleClose} />
+        <MenuOverlay links={navbarLinks} />
       ) : null}
     </nav>
   );

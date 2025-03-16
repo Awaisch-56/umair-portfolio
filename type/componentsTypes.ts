@@ -15,7 +15,6 @@ interface Link {
 //  Nav bar Links For Mobile
 export interface MenuOverlayProps {
     links: Link[];
-    onClose?: () => void;
 }
 
 // For Skills Bar
