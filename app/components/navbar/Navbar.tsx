@@ -70,15 +70,17 @@ const Navbar = () => {
           <ul className="navbar-links-list">
             {navbarLinks.map((link, index) => (
               <li key={index} onClick={handleClose}>
-                <NavLink href={link.path} title={link.title} onClick={handleClose} />
+                <NavLink
+                  href={link.path}
+                  title={link.title}
+                  onClick={handleClose}
+                />
               </li>
             ))}
           </ul>
         </div>
       </div>
-      {isNavbarOpen ? (
-        <MenuOverlay links={navbarLinks} />
-      ) : null}
+      {isNavbarOpen ? <MenuOverlay links={navbarLinks} /> : null}
     </nav>
   );
 };

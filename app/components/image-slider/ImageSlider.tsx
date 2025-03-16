@@ -27,13 +27,14 @@ const ImageSlider: React.FC = () => {
     <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
       {images.map((image, index) => (
         <SwiperSlide key={index}>
-          <Image
+          {/* <Image
             src={image.path}
             alt={image.name}
             width={300}
             height={300}
             className="image-slider"
-          />
+            /> */}
+          <h3 style={{ textAlign: "center" }}>Will be updated soon</h3>
         </SwiperSlide>
       ))}
     </Swiper>

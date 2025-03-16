@@ -53,7 +53,8 @@ const Project: React.FC = () => {
       <h2 className="projects-heading">
         My <span className="projects-gradient-text">Projects</span>
       </h2>
-      <div className="projects-grid">
+      <h2 className="projects-heading">Will be updated soon</h2>
+      {/* <div className="projects-grid">
         {projects.map((project, index) => (
           <ProjectCard
             key={index}
@@ -63,7 +64,7 @@ const Project: React.FC = () => {
             url={project.url}
           />
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };
