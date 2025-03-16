@@ -1,5 +1,5 @@
 "use client";
-// import Image from "next/image";
+import Image from "next/image";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -11,15 +11,13 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 
 const images = [
-  { path: "/images/react.png", name: "React.js Logo Image" },
-  { path: "/images/nextjs.jpg", name: "Next.js Logo Image" },
-  { path: "/images/react-native-1.png", name: "React Native Logo Image" },
-  { path: "/images/ts.jpg", name: "TypeScript Logo Image" },
-  { path: "/images/js.jpg", name: "JavaScript Logo Image" },
-  { path: "/images/mui.png", name: "Material UI Logo Image" },
-  { path: "/images/bootstrap.jpg", name: "Bootstrap Logo Image" },
-  { path: "/images/css.jpg", name: "CSS Logo Image" },
-  { path: "/images/html.jpg", name: "HTML Logo Image" },
+  { path: "/images/game-play.jpg", name: "React.js Logo Image" },
+  { path: "/images/images.png", name: "React Native Logo Image" },
+  { path: "/images/gaming.jpg", name: "Next.js Logo Image" },
+  { path: "/images/game.png", name: "React Native Logo Image" },
+  { path: "/images/figma.png", name: "TypeScript Logo Image" },
+  { path: "/images/illus.png", name: "JavaScript Logo Image" },
+  { path: "/images/photoshop.png", name: "Material UI Logo Image" },
 ];
 
 const ImageSlider: React.FC = () => {
@@ -27,14 +25,13 @@ const ImageSlider: React.FC = () => {
     <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
       {images.map((image, index) => (
         <SwiperSlide key={index}>
-          {/* <Image
+          <Image
             src={image.path}
             alt={image.name}
             width={300}
             height={300}
             className="image-slider"
-            /> */}
-          <h3 style={{ textAlign: "center" }}>Will be updated soon</h3>
+          />
         </SwiperSlide>
       ))}
     </Swiper>

@@ -26,7 +26,6 @@ export interface SkillBarProps {
 // For Project Card 
 export interface ProjectCardProps {
     title: string;
-    description: string;
     image: string;
     url: string;
 };

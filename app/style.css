@@ -571,13 +571,13 @@
 .image-wrapper {
   position: relative;
   margin-top: 1.5rem;
-  width: 10rem;
-  height: 10rem;
+  width: 95%;
+  height: 200px;
 }
 
 .image {
   box-shadow: 0 0 8px 4px var(--highlight-purple);
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 
 .content {
